@@ -1,8 +1,13 @@
-mod chapter3;
-mod chapter4;
-mod chapter5;
-mod chapter6;
+mod task1;
+mod task2;
 
 fn main() {
-    println!("Hello, world!");
+    println!("Task 1");
+    //https://www.hackerrank.com/challenges/simple-array-sum/problem
+    task1::main();
+
+    println!("Task 2");
+    //https://www.hackerrank.com/challenges/compare-the-triplets/problem
+    task2::main();
+
 }
