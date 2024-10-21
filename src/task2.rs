@@ -22,6 +22,7 @@ fn compare_triplets(a: &[i32], b: &[i32]) -> Vec<i32> {
 }
 
 pub fn main() {
+    println!("Task 2")
     let stdin = io::stdin();
     let mut stdin_iterator = stdin.lock().lines();
 

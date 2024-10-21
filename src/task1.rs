@@ -7,15 +7,20 @@ use std::io::{self, BufRead};
  * The function accepts INTEGER_ARRAY ar as parameter.
  */
 
-fn simple_array_sum(ar: &[i32], _ar_count: i32) -> i32 {
+fn simple_array_sum(ar: &[i32]) -> i32 {
+    ar.iter().sum()
+    //або вручну:
+    /*
     let mut result = 0;
     for i in 0..ar.len() {
         result += ar[i];
     }
     return result;
+    */
 }
 
 pub fn main() {
+    println!("Task 1");
     let stdin = io::stdin();
     let mut stdin_iterator = stdin.lock().lines();
 
@@ -27,7 +32,7 @@ pub fn main() {
         .map(|s| s.parse::<i32>().unwrap())
         .collect();
 
-    let result = simple_array_sum(&ar, _ar_count);
+    let result = simple_array_sum(&ar);
 
     println!("{}", result);
 }
